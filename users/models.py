@@ -12,7 +12,7 @@ class UsersModel(models.Model):
     user_area = models.CharField(max_length=126,verbose_name='지역')
     user_age = models.IntegerField(default=True)
     create_time = models.DateTimeField(default=timezone.now,verbose_name='생성 시간')
-
+    user_phone = models.CharField(max_length=16, blank=True, null=True, verbose_name='전화번호')
     def __str__(self):
         return self.user_name
 

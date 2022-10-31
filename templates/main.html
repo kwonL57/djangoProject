@@ -76,30 +76,30 @@
             <hr class="sidebar-divider">
 
             <!-- Heading -->
-            <div class="sidebar-heading">
-                Addons
-            </div>
+{#            <div class="sidebar-heading">#}
+{#                Addons#}
+{#            </div>#}
 
             <!-- Nav Item - Pages Collapse Menu -->
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
-                    aria-expanded="true" aria-controls="collapsePages">
-                    <i class="fas fa-fw fa-folder"></i>
-                    <span>Pages</span>
-                </a>
-                <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Login Screens:</h6>
-                        <a class="collapse-item" href="login.html">Login</a>
-                        <a class="collapse-item" href="register.html">Register</a>
-                        <a class="collapse-item" href="forgot-password.html">Forgot Password</a>
-                        <div class="collapse-divider"></div>
-                        <h6 class="collapse-header">Other Pages:</h6>
-                        <a class="collapse-item" href="404.html">404 Page</a>
-                        <a class="collapse-item" href="blank.html">Blank Page</a>
-                    </div>
-                </div>
-            </li>
+{#            <li class="nav-item">#}
+{#                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"#}
+{#                    aria-expanded="true" aria-controls="collapsePages">#}
+{#                    <i class="fas fa-fw fa-folder"></i>#}
+{#                    <span>Pages</span>#}
+{#                </a>#}
+{#                <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">#}
+{#                    <div class="bg-white py-2 collapse-inner rounded">#}
+{#                        <h6 class="collapse-header">Login Screens:</h6>#}
+{#                        <a class="collapse-item" href="login.html">Login</a>#}
+{#                        <a class="collapse-item" href="register.html">Register</a>#}
+{#                        <a class="collapse-item" href="forgot-password.html">Forgot Password</a>#}
+{#                        <div class="collapse-divider"></div>#}
+{#                        <h6 class="collapse-header">Other Pages:</h6>#}
+{#                        <a class="collapse-item" href="404.html">404 Page</a>#}
+{#                        <a class="collapse-item" href="blank.html">Blank Page</a>#}
+{#                    </div>#}
+{#                </div>#}
+{#            </li>#}
 
 
             <!-- Divider -->
@@ -258,7 +258,7 @@
                     <div class="row">
 
                         <!-- Earnings (Monthly) Card Example -->
-                        <div class="col-xl-3 col-md-6 mb-4">
+                        <div class="col-xl-4 col-md-6 mb-4">
                             <div class="card border-left-primary shadow h-100 py-2">
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
@@ -276,14 +276,14 @@
                         </div>
 
                         <!-- Earnings (Monthly) Card Example -->
-                        <div class="col-xl-3 col-md-6 mb-4">
+                        <div class="col-xl-4 col-md-6 mb-4">
                             <div class="card border-left-success shadow h-100 py-2">
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
                                             <div class="font-weight-bold text-success text-uppercase mb-1">
                                                 보이스피싱 탐지 수</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">뭐로바꾸지</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">{{ result_count}}명</div>
                                         </div>
                                         <div class="col-auto">
                                             <i class="fas fa-fire fa-3x text-danger"></i>
@@ -293,47 +293,21 @@
                             </div>
                         </div>
 
-                        <!-- Earnings (Monthly) Card Example -->
-                        <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card border-left-info shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Tasks
-                                            </div>
-                                            <div class="row no-gutters align-items-center">
-                                                <div class="col-auto">
-                                                    <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">50%</div>
-                                                </div>
-                                                <div class="col">
-                                                    <div class="progress progress-sm mr-2">
-                                                        <div class="progress-bar bg-info" role="progressbar"
-                                                            style="width: 50%" aria-valuenow="50" aria-valuemin="0"
-                                                            aria-valuemax="100"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-auto">
-                                            <i class="fas fa-clipboard-list fa-2x text-gray-300"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+
+
 
                         <!-- Pending Requests Card Example -->
-                        <div class="col-xl-3 col-md-6 mb-4">
+                        <div class="col-xl-4 col-md-6 mb-4">
                             <div class="card border-left-warning shadow h-100 py-2">
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
-                                                Pending Requests</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">18</div>
+                                            <div class="font-weight-bold text-warning text-uppercase mb-1">
+                                                현재 시간</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">{{ now }}</div>
                                         </div>
                                         <div class="col-auto">
-                                            <i class="fas fa-comments fa-2x text-gray-300"></i>
+                                            <i class="fas fa-clock fa-2x text-gray-300"></i>
                                         </div>
                                     </div>
                                 </div>
@@ -346,7 +320,7 @@
                     <div class="row">
 
                         <!-- Area Chart -->
-                        <div class="col-xl-8 col-lg-7">
+                        <div class="col-xl-12 col-lg-7">
                             <div class="card shadow mb-4">
                                 <!-- Card Header - Dropdown -->
                                 <div
@@ -366,60 +340,84 @@
                         </div>
 
                         <!-- Pie Chart -->
-                        <div class="col-xl-4 col-lg-5">
-                            <div class="card shadow mb-4">
-                                <!-- Card Header - Dropdown -->
-                                <div
-                                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                    <h6 class="m-0 font-weight-bold text-primary">보이스 피싱 현황</h6>
-                                    <div class="dropdown no-arrow">
-                                        <a class="dropdown-toggle" href="" role="button" id="dropdownMenuLink"
-                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        </a>
-
-                                    </div>
-                                </div>
-                                <!-- Card Body -->
-                                <div class="card-body">
-                                    <div class="chart-pie pt-1 pb-2">
-                                        <canvas id="myPieChart"></canvas>
-
-                                    </div>
-                                    <div class="mt-4 text-center small">
-                                        <span class="mr-2">
-                                            <i class="fas fa-circle text-primary"></i> 보이스피싱 현황
-                                        </span>
-                                        <span class="mr-2">
-                                            <i class="fas fa-circle text-success"></i> 정상 현황
-                                        </span>
-                                        <span class="mr-2">
-                                            <i class="fas fa-circle text-info"></i> 오탐 현황
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+{#                        <div class="col-xl-4 col-lg-5">#}
+{#                            <div class="card shadow mb-4">#}
+{#                                <!-- Card Header - Dropdown -->#}
+{#                                <div#}
+{#                                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between">#}
+{#                                    <h6 class="m-0 font-weight-bold text-primary">보이스 피싱 현황</h6>#}
+{#                                    <div class="dropdown no-arrow">#}
+{#                                        <a class="dropdown-toggle" href="" role="button" id="dropdownMenuLink"#}
+{#                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">#}
+{#                                        </a>#}
+{##}
+{#                                    </div>#}
+{#                                </div>#}
+{#                                <!-- Card Body -->#}
+{#                                <div class="card-body">#}
+{#                                    <div class="chart-pie pt-1 pb-2">#}
+{#                                        <canvas id="myPieChart" ></canvas>#}
+{##}
+{#                                    </div>#}
+{#                                    <div class="mt-4 text-center small">#}
+{#                                        <span class="mr-2">#}
+{#                                            <i class="fas fa-circle text-primary"></i> 보이스피싱 현황#}
+{#                                        </span>#}
+{#                                        <span class="mr-2">#}
+{#                                            <i class="fas fa-circle text-success"></i> 정상 현황#}
+{#                                        </span>#}
+{#                                        <span class="mr-2">#}
+{#                                            <i class="fas fa-circle text-info"></i> 오탐 현황#}
+{#                                        </span>#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                    </div>#}
 
                     <!-- Content Row -->
-                    <div class="row">
-
+                    <div class="row col-xl-12">
                         <!-- Content Column -->
                         <div class="col-lg-12 mb-4">
-
                             <!-- 탐지로그  -->
                             <div class="card shadow mb-4">
                                 <div class="card-header py-3">
                                     <h6 class="m-0 font-weight-bold text-primary">탐지 로그 현황 </h6>
                                 </div>
-                                <div class="card-body">
 
-                                    <div class="content">보이스 피싱 탐지된 결과입니다.</div>
-                                        <div class="progress-bar" role="progressbar" style="width: 20%"
-                                            aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                    <div class="fa-border fa-2" datasrc=""> ()님이 보이스피싱 탐지되었습니다.</div>
-                                    <div class="fa-border">1234</div>
+                        <div class="card-body">
+                                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                    <thead>
+                                        <tr>
+                                            <th>이름</th>
+                                            <th>지역</th>
+                                            <th>나이</th>
+                                            <th>탐지 결과</th>
+                                        </tr>
+                                    </thead>
+                                    <tfoot>
+                                        <tr>
+                                            <th>이름</th>
+                                            <th>지역</th>
+                                            <th>나이</th>
+                                            <th>탐지 결과</th>
+                                        </tr>
+                                    </tfoot>
+                                    <tbody>
+
+                                {% for user in lists %}
+{#                                    {% if user.result_data ==1 %}#}
+                                    <tr>
+                                    <td>{{ user.user_name }}</td>
+                                    <td>{{ user.user_area }}</td>
+                                    <td>{{ user.user_age }}</td>
+                                    <td>보이스피싱이 탐지되었습니다.</td>
+                                        </tr>
+                                    {% endfor %}
+                                    </tbody>
+                                </table>
+
+
                                     </div>
 
 

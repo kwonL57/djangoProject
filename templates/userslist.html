@@ -77,37 +77,37 @@
             <hr class="sidebar-divider">
 
             <!-- Heading -->
-            <div class="sidebar-heading">
-                Addons
-            </div>
-
-            <!-- Nav Item - Pages Collapse Menu -->
-            <li class="nav-item">
-
+{#            <div class="sidebar-heading">#}
+{#                Addons#}
+{#            </div>#}
+{##}
+{#            <!-- Nav Item - Pages Collapse Menu -->#}
+{#            <li class="nav-item">#}
+{##}
 {#                </a>#}
-                <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-
-                        <div class="collapse-divider"></div>
-
-                    </div>
-                </div>
-            </li>
-
-            <!-- Nav Item - Charts -->
-            <li class="nav-item">
-                <a class="nav-link" href="/charts">
-                    <i class="fas fa-fw fa-chart-area"></i>
-                    <span>Charts</span></a>
-            </li>
-
-            <!-- Nav Item - Tables -->
-            <li class="nav-item active">
-                <a class="nav-link" href="" data-toggle="collapse" data-target="#collapsePages"
-                    aria-expanded="true" aria-controls="collapsePages">
-                    <i class="fas fa-fw fa-user"></i>
-                    <span>사용자 목록</span></a>
-            </li>
+{#                <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">#}
+{#                    <div class="bg-white py-2 collapse-inner rounded">#}
+{##}
+{#                        <div class="collapse-divider"></div>#}
+{##}
+{#                    </div>#}
+{#                </div>#}
+{#            </li>#}
+{##}
+{#            <!-- Nav Item - Charts -->#}
+{#            <li class="nav-item">#}
+{#                <a class="nav-link" href="/charts">#}
+{#                    <i class="fas fa-fw fa-chart-area"></i>#}
+{#                    <span>Charts</span></a>#}
+{#            </li>#}
+{##}
+{#            <!-- Nav Item - Tables -->#}
+{#            <li class="nav-item active">#}
+{#                <a class="nav-link" href="" data-toggle="collapse" data-target="#collapsePages"#}
+{#                    aria-expanded="true" aria-controls="collapsePages">#}
+{#                    <i class="fas fa-fw fa-user"></i>#}
+{#                    <span>사용자 목록</span></a>#}
+{#            </li>#}
 
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
@@ -353,6 +353,7 @@
                                             <th>지역</th>
                                             <th>나이</th>
                                             <th>생성 시간</th>
+                                            <th>전화 번호</th>
                                         </tr>
                                     </thead>
                                     <tfoot>
@@ -361,18 +362,19 @@
                                             <th>지역</th>
                                             <th>나이</th>
                                             <th>생성 시간</th>
+                                            <th>전화 번호</th>
                                         </tr>
                                     </tfoot>
                                     <tbody>
-                                {% for user in lists %}
 
+                                {% for user in lists %}
                                     <tr>
                                     <td>{{ user.user_name }}</td>
                                     <td>{{ user.user_area }}</td>
                                     <td>{{ user.user_age }}</td>
                                     <td>{{ user.create_time }}</td>
+                                    <td>{{ user.user_phone }}</td>
                                         </tr>
-
                                     {% endfor %}
                                     </tbody>
                                 </table>
