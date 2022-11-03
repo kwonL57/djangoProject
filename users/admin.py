@@ -8,5 +8,5 @@ class UserAdmin(admin.ModelAdmin):
         'user_pw',
         'user_name',
         'user_area',
-        'create_time',
+        #'create_time',
     )

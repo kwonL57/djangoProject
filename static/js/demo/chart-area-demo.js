@@ -32,7 +32,7 @@ var ctx = document.getElementById("myAreaChart");
 var myLineChart = new Chart(ctx, {
   type: 'line',
   data: {
-    labels: ["1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월"],
+    labels: ["2011년", "2012년", "2013년", "2014년", "2015년", "2016년", "2017년", "2018년", "2019년", "2020년", "2021년", ,"2022년"],
     datasets: [{
       label: "보이스피싱 현황",
       lineTension: 0.3,
@@ -45,8 +45,8 @@ var myLineChart = new Chart(ctx, {
       pointHoverBackgroundColor: "rgba(78, 115, 223, 1)",
       pointHoverBorderColor: "rgba(78, 115, 223, 1)",
       pointHitRadius: 10,
-      pointBorderWidth: 2,
-      data: [15000, 20000, 20800, 23000, 25000, 30000, 19000, 25000, 20000, 30000, 25000, 40000],
+      pointBorderWidth: 1,
+      data: [43700000, 95200000, 99100000, 259500000, 244400000, 192400000, 243100000, 444000000, 672000000, 700000000, 774400000],
     }],
   },
   options: {

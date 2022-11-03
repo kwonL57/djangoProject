@@ -7,11 +7,11 @@ var ctx = document.getElementById("myPieChart");
 var myPieChart = new Chart(ctx, {
   type: 'doughnut',
   data: {
-    labels: ["보이스피싱탐지건", "정상", "오탐"],
+    labels: ["20대", "30대", "40대","50대","60대이상"],
     datasets: [{
-      data: [55, 30, 15],
-      backgroundColor: ['#4e73df', '#1cc88a', '#36b9cc'],
-      hoverBackgroundColor: ['#2e59d9', '#17a673', '#2c9faf'],
+      data: [17.6, 10.6, 21.8,30.9,19],
+      backgroundColor: ['#4e73df', '#1cc88a', '#f6c23e','#e74a3b', '#5a5c69'],
+      hoverBackgroundColor: ['#2e59d9', '#17a673', '#f6c23e','#e74a3b', '#5a5c69'],
       hoverBorderColor: "rgba(234, 236, 244, 1)",
     }],
   },
